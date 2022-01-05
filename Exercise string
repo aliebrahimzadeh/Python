@@ -121,3 +121,19 @@ print(str1.rsplit(',', 1))
 print(str1.rsplit(',', 2))
 print(str1.rsplit(',', 5))
 ##########################################################################################################################
+#Write a Python program to find the first non-repeating character in given string.
+def non_repeating(myStr):
+  new_list=[]
+  list={}
+  for char in myStr:
+    if char in list:
+       list[char]+=1
+    else:
+      list[char]=1
+      new_list.append(char)
+  for char in new_list:
+    if list[char]==1:
+       return char
+
+print(non_repeating('abcabcdef'))
+##########################################################################################################################
