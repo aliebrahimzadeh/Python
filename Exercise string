@@ -66,4 +66,41 @@ number=input("input number: ")
 result=floating_numbers(number)
 print("output: " + result )
 ####################################################################################################################
-
+# Write a Python program to format a number with a percentage
+def floating_numbers(number):
+     new_number="{:.2%}".format(number)
+     return new_number
+number=float(input("input number: "))
+result=floating_numbers(number)
+print("output: " + result)
+######################################################################################################################
+#Write a Python program to display a number in left, right and center aligned of width 10
+def floating_numbers(number):
+     new_number1="{:<10}".format(number)
+     new_number2="{:=10}".format(number)
+     new_number3="{:>10}".format(number)
+     list=new_number1 + new_number2 + new_number3
+     return list
+number=float(input("input number: "))
+result=floating_numbers(number)
+print("output: " + result)
+#######################################################################################################################
+#Write a Python program to count occurrences of a substring in a string.
+def substring(myStr):
+    return myStr.count("w3resource")
+print(substring("welcome to w3resource.com"))
+######################################################################################################################
+#Write a Python program to count occurrences of a substring in a string.
+def substring(myStr):
+    return ''.join (reversed(myStr))
+    #return mystr[::-1]
+print(substring("welcome to w3resource.com"))
+#####################################################################################################################
+#Write a Python program to count occurrences of a substring in a string.
+def substring(myStr):
+    a=myStr.split()
+    
+    return ' ' .join (reversed(a))
+    
+print(substring("the quick brown fox"))
+####################################################################################################################
