@@ -33,6 +33,7 @@ number=float(input("input number: "))
 result=floating_numbers(number)
 print("output: " + result )
 ######################################################################################################################
+
 # Write a Python program to print the following floating numbers with no decimal places
 def floating_numbers(number):
      new_number= "{:+.0f}".format(number)
@@ -41,3 +42,28 @@ number=float(input("input number: "))
 result=floating_numbers(number)
 print("output: " + result )
 ######################################################################################################################
+# Write a Python program to print the following integers with zeros on the left of specified width.
+def floating_numbers(number):
+     new_number= str(number).rjust(2,'0')
+     return new_number
+number=input("input number: ")
+result=floating_numbers(number)
+print("output: " + result )
+#######################################################################################################################
+ #Write a Python program to display a number with a comma separator.
+def floating_numbers(number):
+     new_number= "{:,}".format(number)
+     return new_number
+number=float(input("input number: "))
+result=floating_numbers(number)
+print("output: " + result )
+######################################################################################################################
+# Write a Python program to print the following integers with '*' on the right of specified width
+def floating_numbers(number):
+     new_number= str(number).ljust(4,'*')
+     return new_number
+number=input("input number: ")
+result=floating_numbers(number)
+print("output: " + result )
+####################################################################################################################
+
