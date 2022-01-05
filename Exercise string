@@ -25,3 +25,19 @@ print(first_repeated_char_smallest_distance("abcc"))
 print(first_repeated_char_smallest_distance("abcxxy"))
 print(first_repeated_char_smallest_distance("abc"))
 ############################################################################################################################
+#Write a Python program to print the following floating numbers upto 2 decimal places with a sign
+def floating_numbers(number):
+     new_number= "{:+.2f}".format(number)
+     return new_number
+number=float(input("input number: "))
+result=floating_numbers(number)
+print("output: " + result )
+######################################################################################################################
+# Write a Python program to print the following floating numbers with no decimal places
+def floating_numbers(number):
+     new_number= "{:+.0f}".format(number)
+     return new_number
+number=float(input("input number: "))
+result=floating_numbers(number)
+print("output: " + result )
+######################################################################################################################
