@@ -184,4 +184,26 @@ def string(myStr):
 
 
 print(string(' ca bc ab ab cd ad'))
-#
+##################################################################################################################################################
+##Write a Python program to remove spaces from a given string.
+def string(myStr):
+    new_string= myStr.replace(" ","")
+    new_string_1=new_string.rjust(20)
+    return'"'+new_string_1+'"'
+print(string("w3resource .  com  "))
+print(string("   w3resource.com  "))
+##################################################################################################################################################
+def string(myStr):
+   new_list=[]
+   list=dict()
+   x=[char for char in myStr]
+   for ch in x:
+    if ch in list:
+           list[ch]+= 1
+    else:
+            list[ch]=1
+   y=sorted(list.items(),key=lambda kv:kv[1])   
+   return(y[-1])      
+        
+
+print(string("welcome to w3resource"))
