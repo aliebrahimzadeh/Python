@@ -148,3 +148,27 @@ def repetition(myStr,n):
   return result 
   
 print(repetition("A,B,C",3))
+##########################################################################################################################
+#Write a Python program to find the first repeated character of a given string where the index of first occurrence is smallest
+def string(myStr):
+  list={}
+  for char in myStr:
+    if char in list:
+  
+      return char,myStr.index(char)
+    else:
+       list[char]=0
+
+  return None
+print(string("abcabc"))
+###########################################################################################################################
+#Write a Python program to find the first repeated character in a given strin
+def first_repeated_char(str1):
+  for index,c in enumerate(str1):
+    if str1[:index+1].count(c) > 1:
+      return c 
+  return "None"
+
+print(first_repeated_char("abcdabcd"))
+print(first_repeated_char("abcd"))
+
