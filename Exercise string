@@ -137,3 +137,14 @@ def non_repeating(myStr):
 
 print(non_repeating('abcabcdef'))
 ##########################################################################################################################
+#Write a Python program to print all 
+# permutations with given repetition number of characters of a given string.
+from itertools import product
+def repetition(myStr,n):
+  char= list(myStr)
+  result=[]
+  for c in product(char, repeat=n):
+    result.append(c)
+  return result 
+  
+print(repetition("A,B,C",3))
