@@ -171,4 +171,17 @@ def first_repeated_char(str1):
 
 print(first_repeated_char("abcdabcd"))
 print(first_repeated_char("abcd"))
+####################################################################################################################################################
+#Write a Python program to find the first repeated word in a given string
+def string(myStr):
+  list=[]
+  for word in myStr.split():
+    if word in list:
+      return word
+    else:
+      list.append(word)
+  return None
 
+
+print(string(' ca bc ab ab cd ad'))
+#
