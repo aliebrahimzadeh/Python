@@ -207,3 +207,17 @@ def string(myStr):
         
 
 print(string("welcome to w3resource"))
+########################################################################################################################
+#Write a Python program to compute sum of digits of a given string.
+def string(myStr):
+  sum=0
+  for ch in myStr:
+    if ch.isdigit():
+      sum=sum+int(ch)
+  return sum 
+print(string("123abcd45"))
+##############################################################################################################################
+#Write a Python program to compute sum of digits of a given string.
+def string(myStr):
+  return myStr.replace('0','')
+print(string("255.024.01.01"))
