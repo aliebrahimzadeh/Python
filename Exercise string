@@ -221,3 +221,10 @@ print(string("123abcd45"))
 def string(myStr):
   return myStr.replace('0','')
 print(string("255.024.01.01"))
+############################################################################################################################
+#Write a Python program to find maximum length of consecutive 0's in a given binary string
+def string(myStr):
+  #x=[ch for ch in myStr]
+  print(max(map(len,myStr.split('1'))))     
+
+print(string('111000010000110'))
