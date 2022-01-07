@@ -228,3 +228,21 @@ def string(myStr):
   print(max(map(len,myStr.split('1'))))     
 
 print(string('111000010000110'))
+##############################################################################################################################
+#Write a Python program to find all the common characters in lexicographical order from two given lower case strings. 
+#If there are no common letters print "No common characters"
+from collections import Counter 
+str1 = 'Python'
+str2 = 'PHP'
+d1 = Counter(str1)
+print(d1)
+d2 = Counter(str2)
+print(d2)
+common_dict= d1&d2
+print(common_dict)
+if len(common_dict) == 0:
+    print("no common character ")
+common_chars = list(common_dict.elements())
+print(common_chars)
+common_chars = sorted(common_chars)
+print(common_chars)
