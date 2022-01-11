@@ -246,3 +246,50 @@ common_chars = list(common_dict.elements())
 print(common_chars)
 common_chars = sorted(common_chars)
 print(common_chars)
+###############################################################################################################################################################
+from collections import Counter 
+def string(myStr1,myStr2):
+  new_myStr1=myStr1.replace(" ","")
+  print(new_myStr1)
+  new_myStr2=myStr2.replace(" ","")
+  print(new_myStr2)
+  y=[char for char in new_myStr1]
+  print(y)
+  h=[char1 for char1 in new_myStr2]
+  print(h)
+  x=set(new_myStr1).intersection(new_myStr2)
+  print(x)
+  list1=[]
+  for ch in y:
+    if ch not in x:
+      list1.append(ch)
+  print(list1)
+  list2=[]
+  for item in h:
+    if item not in y:
+      list2.append(item)
+  print(list2)
+  differnc_list=list1+list2
+  print(differnc_list)
+  count=len(differnc_list)
+  print(count)
+myStr1=input("first string: ")
+myStr2= input("second string: ")
+print(string(myStr1,myStr2))
+##################################################################################################################################################################
+#67. Write a Python program to remove all consecutive duplicates of a given string
+def string(myStr1):
+    i=0
+    y=[char for char in myStr1]
+    t=""
+    for ch in y:
+        if ch in t:
+           pass
+
+        else:
+            t=t+ch
+            
+    return(t)              
+#myStr1=input("first string: ")
+print(string("aaaaaebbbbb"))
+###############################################################################################################################################################
